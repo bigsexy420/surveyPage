@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Survey Form</title>
+</head>
+<html>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <header>
+            <h1 id="title">Is Michael Gay?</h1>
+            <p id="description">We ask the only question that really matters.</br> <b><em>Is Michael Gay?</em></b></p>
+        </header>
+        <form id="survey-form">
+            <div id="name-div">            
+                <label id="name-label" for="name">Name:</label> <input type="text" id="name" placeholder="Name" required>
+            </div>
+            <div id="email-div">
+                <label id="email-label" for="email">Email:</label> <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div id="number-div">
+                <label id="number-label" for="number">Phone Number:</label> <input type="number" id="number" placeholder="Phone Number" required min="1000000" max="9999999">
+            </div>
+            <div id="gender-div">
+                <label for="dropdown" id="dropdown-label">Gender:</label>
+                <select id="dropdown" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div id="relationship-div">
+                <label for="relationship" id="relationship-label">How do you know Michael:</label>
+                <label for="lover"><input id="lover" type="checkbox" name="relationship" value="lover">Lover</label>
+                <label for="friend"><input type="checkbox" name="relationship" value="friend">Friend</label>
+            </div>
+            <div id="main-question-div">
+                <h2 id="main-question">Is Michael Gay?</h2>
+                <label for="yes"><input id="yes" name="is-michael-gay" type="radio" value="yes">Yes</label>
+                <label for="super-gay"><input id="super-gay" name="is-michael-gay" type="radio" value="super-gay">Super Gay</label>
+            </div>
+            <div id="michael-stories-div"> 
+                <label for="michael-stories">Gay Stories about Michael</label>
+                <textarea name="michael-stories" id="michael-stories" cols="50" rows="10"></textarea>
+            </div>
+            <div id="submit-button">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
